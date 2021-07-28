@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    
+    <title>Survey Form</title>
+</head>
+<body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+
+    "></script>
+    <h1 id="title">
+           Dating Survey
+    </h1>
+
+    <p id="description">
+        It is a Survey About Dating Profile 
+
+    </p>
+    <form id="survey-form">
+        <div class="form-control">
+           <label for="name" id="name-label">
+            Name :
+           </label>
+           <input type="text" id="name" placeholder="Sam" name="name" required>
+           
+        </div>
+
+        <div class="form-control">      
+           <label for="email" id="email-label">
+            Email id:
+           </label>
+           <input type="email" id="email" placeholder="abc@.gmail.com" name="email" required>
+        </div> 
+
+        <div class="form-control">
+            <label for="number"   id="number-label">
+            Number:
+            </label> 
+            <input type="number" id="number"  name="number" required min="0" max="10" placeholder="00000 00000">
+        </div>
+
+        <div class="form-control">
+            <label for="traits">
+            What traits do you look for in a partner?
+            </label>
+         <select name="traits" id="dropdown">
+             <option value="honest">
+                Honest
+              </option>
+              <option value="naive">
+                Naive
+              </option>
+              <option value="kind">
+                Kind
+              </option>
+              <option value="moody">
+               Moody 
+              </option>
+              <option value="open minded">
+                Open Minded
+              </option>
+          </select>
+        </div>
+          
+        <div class="form-control">
+         <fieldset>
+             <legend> Whats your Gender:</legend>
+             <input type="radio" name="gender" value="Male" id="male">
+             <label        for="male">
+             Male
+             </label>
+             <input type="radio" id="female" value="Female"   name="gender">
+             <label for="female">
+             Female
+             </label>
+            </fieldset>
+        </div>    
+            
+        <div class="form-control">
+            What kind of music puts you in mood?
+            
+            <input type="checkbox" id="music1" name="music1" value="soulmusic">
+            <label for="music">
+                Soul Music
+            </label>
+            
+            <input type="checkbox" id="music2" name="music2" value="Jazz">
+            <label for="music">
+                Jazz
+            </label>
+            
+            <input type="checkbox" id="music3" name="music3" value="Blues">
+            <label for="music">
+                Blues
+            </label>
+            
+            <input type="checkbox" id="music4" name="music4" value="classicalmusic">
+            <label for="music">
+                Classical Music
+            </label>
+        </div>
+        
+        <div class="form-control">
+            <label for="dateNight">
+                What Yours Ideal Dream Date Night?
+            </label>
+            
+            <textarea id="dateNight" name="dateNight" rows="4" cols="50" placeholder="Enter your answer here"></textarea>
+        </div>
+        
+        
+            <button type="submit" id="submit" value="Submit">
+                Submit
+            </button>
+        
+
+
+        
+
+
+
+    </form>
+
+  
+    
+</body>
+</html>
